@@ -3,11 +3,8 @@
 """
 1. Написати джобу, яка витягує всі данні продаж з API та зберігає їх в raw директорію:
 * В якості шаблону для джоби використати код в папці: [link]
-* API доступна за адресою: https://fake-api-vycpfa6oca-uc.a.run.app/
-* Секретний токен до API: 2b8d97ce57d401abd89f45b0079d8790edd940e6
 * Приклад, як діставати дані з API: [link]
-* Секретний токен в жодному разі не можна зберігати в коді,
-    він обовʼязково має зберігатися у змінній середовища з назвою AUTH_TOKEN
+
 * В файлі main.py має бути реалізований WEB сервер за допомогою фреймворка Flask,
     який працює локально і приймає команди у вигляді POST запитів на порт 8081
 * Сервер має приймати JSON обʼєкт наступного вигляду: [link]
@@ -20,8 +17,53 @@
     і т.д. якщо файлів декілька
 """
 
-import requests
 
-headers = {"Authorization": "2b8d97ce57d401abd89f45b0079d8790edd940e6"}
+from flask import Flask
+import requests
+import os
+
+app = Flask(__name__)
+
 api_url = "https://fake-api-vycpfa6oca-uc.a.run.app/"
-data = requests.get(api_url+"sales?date=2022-08-09&page=1", headers=headers)
+path = "sales/2022-08-09"
+
+
+def is_blank(string):
+    if string:
+        return False
+    return True
+
+
+def fetch_data(path):
+    token = os.getenv('AUTH_TOKEN')
+    if is_blank(token):
+        print("Token not set. Exiting...")
+        return
+    
+    headers = {"Authorization": token}
+
+    if not os.path.exists(path):
+        os.makedirs(os.path.join('raw', path))
+
+    page_n = 0
+    while True:
+        page_n += 1
+        data = requests.get(f"{api_url}sales?date=2022-08-09&page={page_n}", headers=headers)
+        if data.status_code == 200:
+            file_path = os.path.join(path, f'sales_2022-08-09_{page_n}.json')
+            with open(file_path, 'w') as fh:
+                fh.write(data.text)
+        elif data.status_code == 404:
+            print("Read done.")
+            break
+        else:
+            print(data.text)
+            print("Failed to connect API. Please check connection parameters")
+            break
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+if __name__ == "__main__":
+    app.run(port=8081, debug=True)
