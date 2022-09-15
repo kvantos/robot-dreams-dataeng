@@ -24,6 +24,9 @@ def controller() -> flask_typing.ResponseReturnValue:
     if is_blank(input_data):
         return {"message": "Input .json is empty"}, 400
 
+    if 'stg_dir' not in input_data or 'raw_dir' not in input_data:
+        return {"message": "Incorrect .json configuration"}, 422
+
     try:
         storage.save_to_disk(input_data["raw_dir"], input_data["stg_dir"])
     except Exception as error_message:

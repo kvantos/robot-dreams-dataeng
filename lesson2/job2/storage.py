@@ -28,18 +28,18 @@ def save_to_disk(json_content, path):
     reading_path = os.path.join(workdir, json_content.lstrip("/"))
     storing_path = os.path.join(workdir, path.lstrip("/"))
 
-    if not os.path.exists(storing_path):
-        try:
-            os.makedirs(storing_path)
-        except Exception as e:
-            raise StorageException(f"Failed to create storage dir\n{e}")
-
     if os.path.exists(reading_path):
         incoming_files = os.listdir(reading_path)
         if len(incoming_files) == 0:
             raise StorageException("No incoming data found.")
     else:
         raise StorageException("No incoming data found.")
+
+    if not os.path.exists(storing_path):
+        try:
+            os.makedirs(storing_path)
+        except Exception as e:
+            raise StorageException(f"Failed to create storage dir\n{e}")
 
     files = os.listdir(storing_path)
     if len(files) > 0:
