@@ -1,0 +1,181 @@
+[2022-10-03T15:29:56.723+0300] {processor.py:156} INFO - Started process (PID=61626) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:56.729+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:29:56.729+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:56.729+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:56.881+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:29:56.899+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:56.927+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:56.927+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:29:57.078+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:57.077+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:29:57.093+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.371 seconds
+[2022-10-03T15:29:58.972+0300] {processor.py:156} INFO - Started process (PID=61631) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:58.977+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:29:58.978+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:58.978+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:59.119+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:29:59.133+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:29:59.175+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:59.174+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:29:59.353+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:29:59.353+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:29:59.371+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.400 seconds
+[2022-10-03T15:30:01.082+0300] {processor.py:156} INFO - Started process (PID=61685) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:01.086+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:01.086+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:01.086+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:01.187+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:01.198+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:01.222+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:01.222+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:01.370+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:01.370+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:01.387+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.307 seconds
+[2022-10-03T15:30:03.084+0300] {processor.py:156} INFO - Started process (PID=61750) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:03.088+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:03.088+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:03.088+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:03.181+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:03.191+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:03.213+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:03.212+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:03.325+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:03.325+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:03.342+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.259 seconds
+[2022-10-03T15:30:05.014+0300] {processor.py:156} INFO - Started process (PID=61753) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:05.018+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:05.018+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:05.018+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:05.109+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:05.119+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:05.141+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:05.141+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:05.244+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:05.244+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:05.260+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.246 seconds
+[2022-10-03T15:30:06.044+0300] {processor.py:156} INFO - Started process (PID=61756) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:06.049+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:06.049+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:06.049+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:06.145+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:06.155+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:06.179+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:06.179+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:06.298+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:06.298+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:06.316+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.272 seconds
+[2022-10-03T15:30:07.080+0300] {processor.py:156} INFO - Started process (PID=61757) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:07.084+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:07.084+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:07.084+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:07.183+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:07.194+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:07.217+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:07.217+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:07.348+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:07.348+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:07.377+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.298 seconds
+[2022-10-03T15:30:09.066+0300] {processor.py:156} INFO - Started process (PID=61758) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:09.071+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:09.071+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:09.071+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:09.171+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:09.183+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:09.208+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:09.207+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:09.318+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:09.318+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:09.334+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.269 seconds
+[2022-10-03T15:30:10.996+0300] {processor.py:156} INFO - Started process (PID=61763) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:11.000+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:11.000+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:11.000+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:11.092+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:11.103+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:11.125+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:11.125+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:11.231+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:11.231+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:11.245+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.250 seconds
+[2022-10-03T15:30:12.885+0300] {processor.py:156} INFO - Started process (PID=61764) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:12.889+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:12.890+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:12.890+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:12.984+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:12.995+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:13.017+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:13.017+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:13.130+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:13.130+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:13.145+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.260 seconds
+[2022-10-03T15:30:14.811+0300] {processor.py:156} INFO - Started process (PID=61767) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:14.815+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:14.815+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:14.815+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:14.909+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:14.919+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:14.941+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:14.941+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:15.045+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:15.045+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:15.057+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.246 seconds
+[2022-10-03T15:30:16.674+0300] {processor.py:156} INFO - Started process (PID=61770) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:16.679+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:16.679+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:16.679+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:16.773+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:16.786+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:16.808+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:16.808+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:16.919+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:16.919+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:16.934+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.260 seconds
+[2022-10-03T15:30:18.651+0300] {processor.py:156} INFO - Started process (PID=61771) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:18.655+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:18.655+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:18.655+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:18.755+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:18.767+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:18.789+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:18.789+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:18.898+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:18.898+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:18.911+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.260 seconds
+[2022-10-03T15:30:20.565+0300] {processor.py:156} INFO - Started process (PID=61776) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:20.569+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:20.570+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:20.570+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:20.666+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:20.677+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:20.700+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:20.700+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:20.814+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:20.813+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:20.827+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.263 seconds
+[2022-10-03T15:30:22.492+0300] {processor.py:156} INFO - Started process (PID=61777) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:22.497+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:22.497+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:22.497+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:22.593+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:22.604+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:22.768+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:22.768+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:22.784+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:22.784+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:22.797+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.306 seconds
+[2022-10-03T15:30:24.490+0300] {processor.py:156} INFO - Started process (PID=61778) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:24.494+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:24.494+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:24.494+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:24.591+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:24.602+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:24.751+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:24.751+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:24.767+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:24.767+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:24.781+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.291 seconds
+[2022-10-03T15:30:26.439+0300] {processor.py:156} INFO - Started process (PID=61783) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:26.443+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:26.443+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:26.443+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:26.539+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:26.550+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:26.696+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:26.696+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:26.712+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:26.711+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:26.724+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.286 seconds
+[2022-10-03T15:30:27.648+0300] {processor.py:156} INFO - Started process (PID=61784) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:27.652+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:27.652+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:27.652+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:27.746+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:27.756+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:27.898+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:27.897+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:27.920+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:27.920+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:27.936+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.288 seconds
+[2022-10-03T15:30:29.613+0300] {processor.py:156} INFO - Started process (PID=61788) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:29.617+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:29.617+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:29.617+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:29.713+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:29.723+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:29.866+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:29.866+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:29.880+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:29.880+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:29.892+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.279 seconds
+[2022-10-03T15:30:31.623+0300] {processor.py:156} INFO - Started process (PID=61792) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:31.627+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:31.627+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:31.627+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:31.724+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:31.735+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:31.875+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:31.875+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:31.889+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:31.889+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:31.901+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.279 seconds
+[2022-10-03T15:30:33.547+0300] {processor.py:156} INFO - Started process (PID=61793) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:33.551+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:33.551+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:33.551+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:33.644+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:33.677+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:33.840+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:33.840+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:33.854+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:33.854+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:33.866+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.320 seconds
+[2022-10-03T15:30:35.501+0300] {processor.py:156} INFO - Started process (PID=61796) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:35.505+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:35.506+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:35.506+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:35.598+0300] {logging_mixin.py:117} WARNING - /Users/kvantos/Projects/airflow-venv/lib/python3.10/site-packages/airflow/models/dag.py:3393 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-10-03T15:30:35.609+0300] {processor.py:768} INFO - DAG(s) dict_keys(['taskflow']) retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:35.758+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:35.758+0300] {dag.py:2573} INFO - Sync 1 DAGs
+[2022-10-03T15:30:35.774+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:35.774+0300] {dag.py:3324} INFO - Setting next_dagrun for taskflow to 2022-10-02T00:00:00+00:00, run_after=2022-10-03T00:00:00+00:00
+[2022-10-03T15:30:35.788+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.287 seconds
+[2022-10-03T15:30:37.475+0300] {processor.py:156} INFO - Started process (PID=61799) to work on /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:37.479+0300] {processor.py:758} INFO - Processing file /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py for tasks to queue
+[2022-10-03T15:30:37.479+0300] {logging_mixin.py:117} INFO - [2022-10-03T15:30:37.479+0300] {dagbag.py:525} INFO - Filling up the DagBag from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:37.479+0300] {processor.py:770} WARNING - No viable dags retrieved from /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py
+[2022-10-03T15:30:37.573+0300] {processor.py:178} INFO - Processing /Users/kvantos/Projects/robot-dreams-dataeng/lesson7/airflow/dags/tt_ho.py took 0.098 seconds
