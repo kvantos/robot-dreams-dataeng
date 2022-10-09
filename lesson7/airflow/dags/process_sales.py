@@ -1,29 +1,52 @@
-from airflow.decorators import dag, task
+from airflow.decorators import dag
+from airflow.decorators import task
+from airflow.exceptions import AirflowFailException
 from datetime import datetime
-
 import requests
-# import logging
+import os
+
+os.environ["no_proxy"] = "*"
+GET_API_URL = 'http://127.0.0.1:8081/apiworker'
+CONVERT_URL = 'http://127.0.0.1:8081/storageworker'
 
 
-# raw_dir та stg_dir
 @dag(
-    schedule_interval='0 1 * * *',
+    schedule='0 1 * * *',
     start_date=datetime(2022, 8, 9),
-    end_date=datetime(2022, 8, 11)
+    end_date=datetime(2022, 8, 12),
     catchup=True,
     max_active_runs=1
     )
 def process_sales():
-    @task(task_id='extract_data_from_api')
-    def get_data() -> int:
-        print("ho")
-        return 201
+    @task
+    def extract_data_from_api(**kwargs):
+        logical_run_date = kwargs['ds']
+        req_json = {
+            "date": logical_run_date,
+            "raw_dir": f"raw/sales/{logical_run_date}"
+            }
+        rpl = requests.post(GET_API_URL, json=req_json)
+        if rpl.status_code != 201:
+            error_message = f'API error {rpl.status_code} {rpl.text}'
+            raise AirflowFailException(error_message)
 
-    @task(task_id='convert_to_avro')
-    def process_data(status_code: int):
-        print("haha")
+        return logical_run_date
 
-    process_data(get_data())
+    @task
+    def convert_to_avro(run_date):
+        req_json = {
+            "raw_dir": f"raw/sales/{run_date}",
+            "stg_dir": f"stg/sales/{run_date}"
+            }
+
+        rpl = requests.post(CONVERT_URL, json=req_json)
+        if rpl.status_code != 201:
+            error_message = f'Convertor error {rpl.status_code} {rpl.text}'
+            raise AirflowFailException(error_message)
+
+    gdata = extract_data_from_api()
+    ctoavro = convert_to_avro(gdata)
+    gdata >> ctoavro
 
 
 dagg = process_sales()
