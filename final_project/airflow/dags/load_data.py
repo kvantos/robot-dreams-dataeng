@@ -4,41 +4,66 @@ from airflow.decorators import task
 from airflow.exceptions import AirflowFailException
 from datetime import datetime
 from google.cloud import storage
+from google.cloud import bigquery
 
 
 os.environ["no_proxy"] = "*"
-BUCKET_NAME = 'robot-dreams-de2022-lesson10-data'
-SRC_PREFIX = os.path.expanduser(
-    '~/Projects/DE2022/lect_06/data_lake/landing/src1/sales'
-    )
-DST_PREFIX = 'src1/sales/v1'
+BUCKET_NAME = 'de-2022-incoming-data-raw'
 
 
 @dag(
-    schedule='0 1 * * *',
-    start_date=datetime(2022, 8, 1),
-    end_date=datetime(2022, 8, 3),
-    catchup=True,
+    schedule=None,
+    # start_date=datetime(2022, 8, 1),
+    # end_date=datetime(2022, 8, 3),
+    # catchup=True,
     max_active_runs=1
     )
-def load_data():
+def process_sales():
+    big_query = bigquery.Client(location='europe-west3')
+    gcs_client = storage.Client()
+    
     @task
-    def local2gcp(**kwargs):
-        logical_run_date = kwargs['ds']
-        src_path = f"{SRC_PREFIX}/{logical_run_date}"
-        dst_path = f"{DST_PREFIX}/{'/'.join(logical_run_date.split('-'))}"
-        gcs_client = storage.Client()
-        bucket = gcs_client.bucket(BUCKET_NAME)
-        files = os.listdir(src_path)
+    def load_sales2bronze(**kwargs):
+#        logical_run_date = kwargs['ds']        
+        bkt = gcs_client.bucket(BUCKET_NAME)
+        xtrnl_cfg = bigquery.ExternalConfig("CSV")
+        xtrnl_cfg.skip_leading_rows = 1
+        xtrnl_cfg.schema = [
+            bigquery.SchemaField("CustomerId", "STRING"),
+            bigquery.SchemaField("PurchaseDate", "STRING"),
+            bigquery.SchemaField("Product", "STRING"),
+            bigquery.SchemaField("Price", "STRING"),
+        ]
 
-        if len(files) > 0:
-            for file_name in files:
-                blob = bucket.blob(f'{dst_path}/{file_name}')
-                blob.upload_from_filename(f'{src_path}/{file_name}')
+        xtrnl_cfg.source_uris = [
+            os.path.join(BUCKET_NAME, b.name) for b in bkt.list_blobs(prefix='sales')
+        ]
+        
+        job_cfg = bigquery.QueryJobConfig(table_definitions={'sales_raw': xtrnl_cfg})
+
+        load_sql = """
+            INSERT bronze.sales (
+                CustomerId,
+                PurchaseDate,
+                Product,
+                Price
+                )
+            SELECT
+                CustomerId,
+                PurchaseDate,
+                Product,
+                Price
+            FROM sales_raw
+        ;"""
+
+        if len(xtrnl_cfg.source_uris) > 0:
+            query_job = big_query.query(load_sql, job_config=job_cfg)
+            data = query_job.result()
+            print(data)
         else:
             raise AirflowFailException("No files for export")
 
-    local2gcp()
+    load_sales2bronze()
 
 
-dagg = load_data()
+dagg = process_sales()
