@@ -13,18 +13,18 @@ BUCKET_NAME = 'de-2022-incoming-data-raw'
 
 @dag(
     schedule=None,
-    # start_date=datetime(2022, 8, 1),
-    # end_date=datetime(2022, 8, 3),
+    start_date=datetime(2021, 1, 1),
+    end_date=None,
     # catchup=True,
     max_active_runs=1
     )
-def process_sales():
+def load_sales():
     big_query = bigquery.Client(location='europe-west3')
     gcs_client = storage.Client()
-    
+
     @task
-    def load_sales2bronze(**kwargs):
-#        logical_run_date = kwargs['ds']        
+    def load_sales2bronze():
+        # logical_run_date = kwargs['ds']
         bkt = gcs_client.bucket(BUCKET_NAME)
         xtrnl_cfg = bigquery.ExternalConfig("CSV")
         xtrnl_cfg.skip_leading_rows = 1
@@ -36,9 +36,9 @@ def process_sales():
         ]
 
         xtrnl_cfg.source_uris = [
-            os.path.join(BUCKET_NAME, b.name) for b in bkt.list_blobs(prefix='sales')
+            os.path.join('gs://', BUCKET_NAME, b.name) for b in bkt.list_blobs(prefix='sales')
         ]
-        
+
         job_cfg = bigquery.QueryJobConfig(table_definitions={'sales_raw': xtrnl_cfg})
 
         load_sql = """
@@ -61,9 +61,9 @@ def process_sales():
             data = query_job.result()
             print(data)
         else:
-            raise AirflowFailException("No files for export")
+            raise AirflowFailException("No files for load")
 
     load_sales2bronze()
 
 
-dagg = process_sales()
+dagg = load_sales()
