@@ -15,7 +15,7 @@ os.environ["no_proxy"] = "*"
     end_date=None,
     max_active_runs=1
     )
-def nrch_users():
+def enrich_user_profiles():
     big_query = bigquery.Client(location='europe-west3')
 
     @task
@@ -24,28 +24,25 @@ def nrch_users():
         CREATE OR REPLACE TABLE gold.user_profiles_enriched
         AS
         SELECT
-            client_id,
-            first_name,
-            last_name,
-            email,
-            registration_date,
-            state
-        FROM silver.customers
+          c.client_id,
+          c.email,
+          split(up.full_name, ' ')[OFFSET(0)] as first_name,
+          split(up.full_name, ' ')[OFFSET(1)] as last_name,
+          up.full_name,
+          up.birth_date,
+          up.phone_number,
+          up.state,
+          c.registration_date
+        FROM silver.customers c
+        LEFT JOIN silver.user_profiles up
+        ON c.email = up.email
         ;"""
 
         process_job = big_query.query(create_sql)
         data = process_job.result()
         print(data)
 
-    @task
-    def enrich_gold_table():
-        proc_sql = """
-        """
-        process_job = big_query.query(proc_sql)
-        data = process_job.result()
-        print(data)
-        
-    create_gold_table() >> enrich_gold_table()
+    create_gold_table()
 
 
-prcs_ctmrs = nrch_users()
+prcs_ctmrs = enrich_user_profiles()
